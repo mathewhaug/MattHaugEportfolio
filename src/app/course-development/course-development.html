@@ -1,0 +1,35 @@
+<section id="courses" class="courses-section">
+  <h2>Courses Developed</h2>
+
+  <div class="course-layout">
+    <!-- Left: PDF Outlines -->
+    <div class="course-pdf-list">
+      <div class="course-item" *ngFor="let course of courses" (click)="openPdf(course)">
+        <h3>{{ course.name }}</h3>
+        <button>View Outline</button>
+      </div>
+    </div>
+
+    <!-- Right: Modules -->
+    <div class="course-modules">
+      <h3>Modules Completed:</h3>
+      <div class="module-grid">
+        <img *ngFor="let img of moduleImages" [src]="img" (click)="expandImage(img)" alt="Module Screenshot">
+      </div>
+    </div>
+  </div>
+
+  <!-- PDF Modal -->
+  <div class="pdf-modal" *ngIf="selectedPdfUrl" (click)="closePdf()">
+    <div class="pdf-content" (click)="$event.stopPropagation()">
+      <iframe class="pdf-frame" [src]="selectedPdfUrl | safePipe"></iframe>
+      <button class="close-btn" (click)="closePdf()">Close</button>
+    </div>
+  </div>
+
+  <!-- Image Modal -->
+  <div class="image-modal" *ngIf="expandedImage" (click)="expandedImage = null">
+    <img [src]="expandedImage" (click)="$event.stopPropagation()">
+    <button class="close-btn" (click)="expandedImage = null">Close</button>
+  </div>
+</section>

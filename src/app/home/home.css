@@ -1,0 +1,54 @@
+.home-wrapper {
+  position: relative;
+  background: url('/assets/images/windsor-campus-esport-nexus.jpg') center/cover no-repeat;
+  min-height: 70vh;
+  padding: 60px 0;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.home-wrapper::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 105, 60, 0.5);
+  z-index: 1;
+}
+
+.home-content-left {
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+  margin-left: 80px;
+  text-align: left;
+}
+
+.home-content-left h1 {
+  font-size: 2.75rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.home-content-left p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #f0f0f0;
+}
+
+/* Center-ish button, nudged slightly to the right */
+.cta-button {
+  position: absolute;
+  left: 58%; /* just off-center right */
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+
+  /* Bigger and bolder button */
+  font-size: 1.4rem;
+  padding: 24px 48px;
+  border-radius: 10px;
+  font-weight: 700;
+  color: black;
+}
+

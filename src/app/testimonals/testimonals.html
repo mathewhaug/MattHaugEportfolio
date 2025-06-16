@@ -1,0 +1,28 @@
+<section id="testimonials" class="testimonials-section">
+  <h2>Student Testimonials</h2>
+  <img class="testimonial-top-right" src="/assets/images/start-here-stacked.svg" alt="Decorative" />
+  <div class="testimonial-grid">
+    <div
+      class="testimonial-card"
+      *ngFor="let student of testimonials"
+      (click)="selectStudent(student)"
+    >
+      <img [src]="student.image" [alt]="student.name">
+      <p>{{ student.name }}</p>
+    </div>
+  </div>
+
+  <!-- Expanded View -->
+  <div
+    class="testimonial-expanded"
+    *ngIf="selectedStudent"
+    (click)="selectedStudent = null"
+  >
+    <div class="testimonial-popup">
+      <img [src]="selectedStudent.image" [alt]="selectedStudent.name">
+      <h3>{{ selectedStudent.name }}</h3>
+
+      <button (click)="selectedStudent = null">Close</button>
+    </div>
+  </div>
+</section>

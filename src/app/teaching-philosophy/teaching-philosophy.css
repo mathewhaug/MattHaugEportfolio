@@ -1,0 +1,38 @@
+.philosophy-section {
+  background: url('/assets/images/header-future-students.jpg') center/cover no-repeat;
+  color: white;
+  padding: 100px 30px;
+  text-align: center;
+  position: relative;
+}
+
+.philosophy-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4); /* dark overlay for contrast */
+  z-index: 1;
+}
+
+.philosophy-section h2,
+.philosophy-section p {
+  position: relative;
+  z-index: 2;
+}
+
+.philosophy-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.philosophy-section p {
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto 20px auto;
+  line-height: 1.8;
+}
+
+.philosophy-section h2,
+.philosophy-section p {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
+}
