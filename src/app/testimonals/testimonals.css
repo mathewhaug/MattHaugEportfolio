@@ -2,7 +2,7 @@
   position: relative;
   padding: 100px 30px;
   text-align: center;
-  background: url('/assets/images/windsor-campus-drone.jpg') center/cover no-repeat;
+  background: url('../../assets/images/windsor-campus-drone.jpg') center/cover no-repeat;
   color: black;
 }
 

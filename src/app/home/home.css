@@ -1,6 +1,6 @@
 .home-wrapper {
   position: relative;
-  background: url('/assets/images/windsor-campus-esport-nexus.jpg') center/cover no-repeat;
+  background: url('../../assets/images/windsor-campus-esport-nexus.jpg') center/cover no-repeat;
   min-height: 70vh;
   padding: 60px 0;
   display: flex;

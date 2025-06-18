@@ -20,19 +20,19 @@ export class CourseDevelopment {
   courses = [
     {
       name: 'MAD 411 - Android App Development with Kotlin',
-      pdfUrl: '/assets/outlines/MAD411OUTLINE.pdf'
+      pdfUrl: 'assets/outlines/MAD411OUTLINE.pdf'
     },
     {
       name: 'MAD 511 - Advanced Android Development',
-      pdfUrl: '/assets/outlines/MAD511OUTLINE.pdf'
+      pdfUrl: 'assets/outlines/MAD511OUTLINE.pdf'
     },
     {
       name: 'MAD 307 - Angular',
-      pdfUrl: '/assets/outlines/MAD307OUTLINE.pdf'
+      pdfUrl: 'assets/outlines/MAD307OUTLINE.pdf'
     },
     {
       name: 'WEB 230 - Javascript I',
-      pdfUrl: '/assets/outlines/WEB230OUTLINE.pdf'
+      pdfUrl: 'assets/outlines/WEB230OUTLINE.pdf'
     }
   ];
 
@@ -45,10 +45,10 @@ export class CourseDevelopment {
   }
 
   moduleImages = [
-    '/assets/images/modules/module.jpg',
-    '/assets/images/modules/module2.jpg',
-    '/assets/images/modules/module3.jpg',
-    '/assets/images/modules/module4.jpg'
+    'assets/images/modules/module.jpg',
+    'assets/images/modules/module2.jpg',
+    'assets/images/modules/module3.jpg',
+    'assets/images/modules/module4.jpg'
   ];
 
   expandImage(img: string) {
