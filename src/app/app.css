@@ -14,15 +14,24 @@ body, html {
   z-index: 1000;
   text-align: center;
 }
-
 .navbar button {
   background: none;
   border: none;
   color: white;
   margin: 0 1rem;
-  font-size: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
   cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
+
+.navbar button:hover {
+  background-color: #e6b800; /* slightly darker yellow */
+  transform: translateY(-2px);
+}
+
 
 main section {
   display: block;

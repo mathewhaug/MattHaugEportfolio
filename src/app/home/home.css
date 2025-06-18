@@ -35,7 +35,6 @@
   line-height: 1.6;
   color: #f0f0f0;
 }
-
 /* Center-ish button, nudged slightly to the right */
 .cta-button {
   position: absolute;
@@ -50,5 +49,17 @@
   border-radius: 10px;
   font-weight: 700;
   color: black;
+  background-color: #FDC82F;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
+
+.cta-button:hover {
+  background-color: #e6b800; /* darker yellow on hover */
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+
+
 
